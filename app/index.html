@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta property="og:title" content="WELL-KNOWN SAYING." />
+		<meta property="og:site_name" content="WELL-KNOWN SAYING.">
+		<meta property="og:description" content="孔子曰：中午不睡，下午崩溃！孟子曰：孔子说的对！" />
+		<meta property="og:type" content="blog">
+
+		<title>WELL-KNOWN SAYING.</title>
+		<link rel='stylesheet' href='css/main.css' />
+		<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+
+		<style media="screen">
+			body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<style type="text/css">
+			 
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+		</style>
+		<script src="js/rainyday.js"></script>
+		<!--RAINY DAY SCRIPT BY Marek Brodziak-->
+		<script>
+			function run() {
+				var image = document.getElementById('background');
+				image.onload = function() {
+					var engine = new RainyDay({
+						image: this
+					});
+					engine.rain([
+						[1, 2, 600]
+					]);
+					engine.rain([
+						[3, 3, 0.88],
+						[5, 5, 0.9],
+						[6, 2, 1]
+					], 100);
+				};
+				image.crossOrigin = 'anonymous';
+				image.src = 'images/r.jpg';
+			}
+		</script>
+	</head>
+
+	<body onload="run();">
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+
+		<img style="position:fixed;" id="background" src="" />
+ 
+
+		<div id="scrollm" class="scroll"><a href="https://ruyangit.github.io">BROWSE FOR MORE</a></div>
+		<div class="github"><a href="https://github.com/ruyangit" style="display: block;">&nbsp;</a></div>
+		<div class="weibo"><a href="http://weibo.com/ryanru" style="display: block;">&nbsp;</a></div>
+		<div class="header_container">
+			<div class="header_copy">
+
+				<div id="copy_cta" style="width:640px;height:140px;position:relative;font-family: 'Oxygen', sans-serif;font-weight: 400;text-align:center;line-height:30px;font-size:30px;color:#FFF;">
+				WELL-KNOWN SAYING<br/><br/>
+				<span style="font-family: 'Oxygen', sans-serif;font-weight: 400;text-align:center;line-height:80px;font-size:45px;color:#FFF;font-weight:700;">孔子曰：中午不睡，下午崩溃！<br/>孟子曰：孔子说的对！</span></div>
+
+				<!--<div id="start" class="button">浏览信息</div>-->
+
+			</div>
+		</div>
+		
+		 
+	</body>
+	<!-- Preloader -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		})
+		//]]>
+	</script>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?33235408abe5737de89b93342378fccd";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>

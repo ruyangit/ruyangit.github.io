@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#2D7EC8; /* change if the mask should have another color then white */
+    z-index:999999999; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(/app/images/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+.scroll {
+	width:160px;
+	height:40px;
+	bottom:40px;
+	background-color:rgba(0,0,0,0.6);
+	font-family:'Oxygen', sans-serif;
+	font-size:12px;
+	font-weight:700;
+	line-height:40px;
+	text-align:center;
+	border-radius:20px;
+	font-weight:700;
+	color:rgba(255,255,255,0.5);
+	position:fixed;
+	z-index:100001;
+	left:50%;
+	margin-left:-80px;
+	
+}
+
+
+.header_container {
+	width:100%;
+	position:absolute;
+	top:50%;
+	margin-top:-270px;
+	height:640px;
+	/*background-color:#2d7ec8;*/
+	z-index:10000;
+	
+}
+
+.header_copy {
+	width:640px;
+	height:220px;
+	position:absolute;
+	top:40%;
+	left:50%;
+	margin-left:-320px;
+	margin-top:-110px;
+	/*background-color:#63F;*/
+}
+
+
+.button {
+	width:320px;
+	height:50px;
+	border-radius:4px;
+	background-color:#309ce5;
+	position:relative;
+	margin:0 auto;
+	top:30px;
+	line-height:50px;
+	text-align:center;
+	font-size:16px;
+	font-weight:700;
+	font-family: 'Oxygen', sans-serif;
+	color:#FFF;
+}
+
+.button:hover {
+	background-color:#FFF;
+	color:#2d7ec8;
+}
+
+.button:active {
+	background-color:#FFF;
+	color:#2d7ec8;
+}
+
+
+.github {
+	width:40px;
+	height:40px;
+	bottom:40px;
+	background-image:url(/app/images/github.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	font-family:'Oxygen', sans-serif;
+	font-size:12px;
+	font-weight:700;
+	line-height:40px;
+	text-align:center;
+	font-weight:700;
+	
+	position:fixed;
+	z-index:100001;
+	left:40px;
+	
+}
+
+.weibo {
+	width:40px;
+	height:40px;
+	bottom:40px;
+	background-image:url(/app/images/weibo.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	font-family:'Oxygen', sans-serif;
+	font-size:12px;
+	font-weight:700;
+	line-height:40px;
+	text-align:center;
+	font-weight:700;
+	
+	position:fixed;
+	z-index:100001;
+	left:100px;
+}
