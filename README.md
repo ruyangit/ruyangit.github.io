@@ -1,2 +1,0 @@
-# ruyangit.github.io
-myblog
